@@ -1,0 +1,9 @@
+clear; close all; clc
+
+s = [0.28 0.40 0.60];
+v = [10,  60,  100];
+
+p = polyfit(s, v, 2);
+
+a = p(1)*s^2 + p(2)*s ;
+
